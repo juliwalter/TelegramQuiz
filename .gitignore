@@ -1,3 +1,6 @@
-venv
+.DS_Store
 app/__pycache__
 app/.env
+app/.DS_Store
+images/.DS_Store
+venv
