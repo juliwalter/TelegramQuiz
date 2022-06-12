@@ -1,8 +1,9 @@
 # TelegramQuiz
 ### Table of Contents 
   * [Setup](#setup)
-  * [Run TelegramBot](#run-telegrambot)
-  * [Configure TelegramQuiz](#configure-telegramquiz)
+  * [Run TelegramBot](#run-telegramquiz)
+  * [Configure TelegramQuiz](#set-telegramquiz-questions)
+  * [Try TelegramQuiz](#try-telegramquiz)
 
 ## Setup
 
@@ -64,3 +65,7 @@ One can stop the script by hitting *ctrl* + *c*.
 ## Set TelegramQuiz questions
 In *'app/database/questions.csv'* one can change the desired questions within the TelegramQuiz-Bot by providing the data in the following way. <br><br> 
 ![](images/Questions_DataStructure.png)
+
+## Try TelegramQuiz
+Try TelegramQuiz your own by scanning following QR-Code. <br><br> 
+![drawing](images/Bot_QR.png)
