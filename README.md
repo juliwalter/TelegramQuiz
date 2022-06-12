@@ -19,7 +19,7 @@ and clone the repository.
 $ git clone https://github.com/juliwalter/TelegramQuiz.git
 ```
 
-Make sure to create a file *.env* in the same folder as main.py and add the following line to it whereat 'your_token_id' has to be replaced by your personal Telegram bot token.
+Make sure to create a file *.env* in the same folder as *main.py* and add the following line to it whereat 'your_token_id' has to be replaced by your personal Telegram bot token.
 
 ```
 TELEGRAM_TOKEN='your_token_id'
@@ -60,7 +60,7 @@ $ cd app
 $ python main.py
 ```
 
-One can stop the script by hitting *ctrl* + *c*.
+To stop the script hit *ctrl* + *c*.
 
 ## Set TelegramQuiz questions
 In *'app/database/questions.csv'* one can change the desired questions within the TelegramQuiz-Bot by providing the data in the following way. <br><br> 
