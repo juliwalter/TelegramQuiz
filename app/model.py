@@ -66,7 +66,9 @@ class config:
     # -----------------------------------------------------
     def __init__(self) -> None:
         self.telegram_token = os.environ.get("TELEGRAM_TOKEN", "")
-        self.help_output = '/start - starts a quiz\n/help - outputs all commands and bot interactions\n/config - lets you config quiz parameters\n\nAny other message will be echoed!'
+        self.question_output = 'Another one? Press /question!'
+        self.welcome_output = 'Welcome, Sunshine!'
+        self.help_output = '/question - Displays a question\n/help - Diplays all commands and bot interactions\n/config - Lets you config quiz parameters\n\nAny other message will be echoed!'
         self.open_period = 10
 
     # ----------------------------------------------------

@@ -15,6 +15,11 @@ quiz = model.quiz()
 config = model.config()
 
 def start(update, context) -> None:
+    """Outputs all welocome text and help."""
+    update.message.reply_text(config.welcome_output)
+    help(update, context)
+
+def question(update, context) -> None:
     """Starts a quiz."""
     # shuffle quiz question
     quiz.shuffle_question()
@@ -29,6 +34,8 @@ def start(update, context) -> None:
         correct_option_id=quiz.correct_answer, 
         open_period=config.open_period
     )
+
+    update.message.reply_text(config.question_output)
 
 def help(update, context) -> None:
     """Outputs all commands."""
@@ -47,6 +54,7 @@ def main() -> None:
 
     # handle commands
     dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("question", question))
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("config", change_config))
 
