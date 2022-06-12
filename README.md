@@ -10,7 +10,7 @@
 
 TelegramQuiz is a python based script, which feeds your Telegram bot with multiple-choice questions. The following commands can be performed with this bot
 * /start - Diplays a multiple-choice question to the user
-* /help - Displays all commands to the user
+* /help - Displays all commands and bot interactions to the user
 * /config - Displays a menu for quiz parameter adjustments (tbd)
 * Any other message will be echoed to the user
 
