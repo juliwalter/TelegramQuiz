@@ -67,5 +67,5 @@ In *'app/database/questions.csv'* one can change the desired questions within th
 ![](images/Questions_DataStructure.png)
 
 ## Try TelegramQuiz
-Try TelegramQuiz your own by scanning following QR-Code. <br><br> 
+Try TelegramQuiz your own by scanning the following QR-Code. <br><br> 
 ![drawing](images/Bot_QR.png)
