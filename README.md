@@ -10,10 +10,10 @@
 
 TelegramQuiz is a python based script, which feeds your Telegram bot with multiple-choice questions. The following commands can be performed with this bot
 * /start - Welcomes the user and prints out the /help output
-* /question - Diplays a multiple-choice question to the user
-* /help - Displays all commands and bot interactions to the user
+* /question - Diplays a multiple-choice question to user
+* /help - Displays all commands and bot interactions to user
 * /config - Displays a menu for quiz parameter adjustments (tbd)
-* Any other message will be echoed to the user
+* Any other message will be echoed to user
 
 ## Setup
 
@@ -29,7 +29,7 @@ and clone the repository.
 $ git clone https://github.com/juliwalter/TelegramQuiz.git
 ```
 
-Make sure to create a file *.env* in the same folder as *main.py* and add the following line to it whereat 'your_token_id' has to be replaced by your personal Telegram bot token.
+Make sure to create a file *.env* in the *app* folder and add the following line to it whereat 'your_token_id' has to be replaced by your personal Telegram bot token.
 
 ```
 TELEGRAM_TOKEN='your_token_id'
@@ -64,10 +64,9 @@ Activate the virtual environment
 $ source venv/bin/activate
 ```
 
-navigate to *app* and run the *main.py* script.
+from the projects root directory run the *app.py* script.
 ```
-$ cd app
-$ python main.py
+$ python app.py
 ```
 
 To stop the script hit *ctrl* + *c*.
