@@ -53,7 +53,7 @@ $ pip install pandas
 ```
 
 
-Deactivate the virtual environment to finish the setup.
+Deactivate the virtual environment to finish setup.
 ```
 $ deactivate
 ```
