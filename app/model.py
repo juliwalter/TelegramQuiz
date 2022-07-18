@@ -1,5 +1,4 @@
 import os
-import helpers
 from ctypes import Array
 from random import randint
 from pandas import read_csv
@@ -11,7 +10,7 @@ class quiz:
     def __init__(self) -> None:
         # Read questions from database/questions.csv
         self.questions = read_csv(
-            'database/questions.csv',
+            'app/database/questions.csv',
             sep=';'
         )
 
@@ -46,7 +45,7 @@ class quiz:
         return self.questions.loc[self.rand_ques_id]['Question']
 
     # returns the answers according to rand_ques_id
-    def __answers(self) -> Array:
+    def __answers(self) -> list:
         return [self.questions.loc[self.rand_ques_id][x] for x in ['A', 'B', 'C', 'D']]
     
     # returns the correct_answer according to rand_ques_id
@@ -75,5 +74,5 @@ class config:
     # ------------------ public methods ------------------
     # ----------------------------------------------------
     # setter for period
-    def setter_open_period(self, period):
+    def setter_open_period(self, period) -> None:
         self.open_period = period
