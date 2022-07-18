@@ -3,14 +3,14 @@ from telegram import Poll
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 # import helper functions
-from helpers import *
+from .helpers import *
 
 # load environment variables from .env-file
 from dotenv import load_dotenv
 load_dotenv()
 
 # initialize a quiz and config
-import model 
+from . import model 
 quiz = model.quiz()
 config = model.config()
 
@@ -24,7 +24,7 @@ def question(update, context) -> None:
     # shuffle quiz question
     quiz.shuffle_question()
 
-    # fet user id
+    # get user id
     c_id = get_chat_id(update, context)
 
     # send question as poll to user
@@ -63,6 +63,3 @@ def main() -> None:
 
     updater.start_polling()
     updater.idle()
-
-if __name__ == '__main__':
-    main()
